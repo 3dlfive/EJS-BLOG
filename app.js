@@ -55,8 +55,8 @@ app.get("/posts/:postID",(req,res)=>{
   posts.forEach((item) => {
     if (checkP === _.kebabCase(item.title)){
       res.render("post",{
-        postNamePost: posts.title,
-        postBodyPost: posts.content
+        postNamePost: item.title,
+        postBodyPost: item.content
       });
     }else{console.log("page not found");}
   });
