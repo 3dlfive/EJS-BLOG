@@ -1,0 +1,2 @@
+# EJS-BLOG
+blog challenge 
