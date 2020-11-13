@@ -37,7 +37,11 @@ app.get("/contact",(req,res)=>{
 
 app.get("/compose",(req,res)=>{
   res.render("compose");
-})
+});
+app.post("/compose",(req,res) => {
+  let post = req.body.newPost;
+  console.log(post);
+});
 
 
 
